@@ -75,8 +75,8 @@ body{
     padding: 5px;
 }
 /*the ID for the homepage hero image*/
-#restaurant{
-    width: 95%;
+img {
+    max-width: 100%;
     height: auto;
 }
 
