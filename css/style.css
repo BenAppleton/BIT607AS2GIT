@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(78, 78, 78);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+    text-align: center;
+    padding: 15px;
+}
+.footer-text {
+    margin-left: 20px; /* Adds some space between the navbar and the text */
+    color: white; /* Adjust color as needed */
+}
+body{
+    margin: 0px;
+    background-color: rgb(119, 119, 119);
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 78, 78); /* Or any color of your choice */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: rgb(34, 34, 34);
+}
+
+.navlogo img {
+    max-height: 50px; /* Adjust as needed */
+    margin-right: 20px;
+}
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin: 2px 0; /* This creates space between the lines */
+}
+/* Styling for the hero banner on the homepage */
+.heroimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+/*the ID for the homepage hero image*/
+#restaurant{
+    width: 95%;
+    height: auto;
+}
+
+/*This is for the homepage about us section*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap; /* for mobile responsive design drops the image below the about us text */
+    color: white;
+}
+
+.aboutustext {
+    text-align: left;
+    margin: 10px;
+}
+
+.aboutusimage1 {
+    padding: 5px;
+}
+.aboutusimage2 {
+    padding: 5px;
+}
+/*This is for the blog page*/
+article {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    color: white;
+    width: auto;
+}
+
+.blog {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.blogimage {
+    padding: 5px;
+}
+
+.blogtext {
+    text-align: center;
+    margin: 10px;
+}
+
+/* For mobile responsive design helps to resize for smaller screens */
+@media screen and (max-width: 600px) {
+    #blogimg1, #blogimg2, #squareimage1,#squareimage2, #restaurant, .aboutustext, .aboutusimage, .blogimage {
+        width: 100%;
+        margin-left: 0; /* This resets the margin for smaller screens */
+    }
+    .aboutustext {
+        text-align: center;
+    }
+    .blog {
+        max-width: 100%;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    header .navbar ul, footer .navbar ul {
+        display: none;
+    }
+
+    header .navbar.active ul, footer .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-text {
+        order: 2; /* Ensures the text is below the navbar */
+        width: 100%; /* Makes the text take full width */
+        margin-top: 10px; /* Adds some space above the text */
+    }
+
+    /* Update styles for the navbar in the footer to handle expanded menu */
+    footer .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        /* other styles... */
+    }
+}
