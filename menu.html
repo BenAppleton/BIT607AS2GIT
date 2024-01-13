@@ -32,7 +32,13 @@
         </header>
         
         <div class="heroimage">
-            <img src="images/homepagehero.png" id="restaurant" alt="This is a picture of inside the resturant" width="1600px" height="600px">
+            <picture>
+                <!-- For mobile view (max-width: 600px), display the mobile image -->
+                <source media="(max-width: 600px)" srcset="images/homepageheromobile.png">
+                
+                <!-- For desktop view, display the original image -->
+                <img src="images/homepagehero.png" id="restaurant" alt="This is a picture of inside the restaurant" width="1600px" height="600px">
+            </picture>
         </div>
 
         <main>
