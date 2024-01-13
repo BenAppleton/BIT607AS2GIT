@@ -151,7 +151,62 @@ padding-right: 20px;
     border-radius: 5px;
     transition: width 0.5s ease-in-out;
 }
+.heroimageblog {
+    position: relative; /* Needed for absolute positioning inside */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
 
+.search-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust the position to truly center it */
+    z-index: 10; /* Ensure it's above the image */
+}
+
+#blogSearch {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    border: 2px solid #ccc; /* Adjust border color as needed */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size as needed */
+}
+.blog-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #007bff; /* Example color */
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Different background colors for different tags, if desired */
+.blog-tag.recipes { 
+    background-color: #28a745; /* Example color for recipes tag */
+}
+
+.blog-tag.cultural { 
+    background-color: #dc3545; /* Example color for cultural tag */
+}
+.filter-container {
+    position: absolute;
+    top: 60%; /* Adjust the position based on your layout */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10; /* Ensure it's above the image */
+}
+#blogFilter {
+    width: 300px; /* Adjust width as needed */
+    padding: 10px;
+    border: 2px solid #ccc; /* Adjust border color as needed */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size as needed */
+}
 /* For mobile responsive design helps to resize for smaller screens */
 @media screen and (max-width: 600px) {
     #blogimg1, #blogimg2, #blogimg3, #blogimg4, #blogimg5, #blogimg6, #squareimage1,#squareimage2, #restaurant, .aboutustext, .aboutusimage, .blogimage {
@@ -191,5 +246,25 @@ padding-right: 20px;
         display: flex;
         flex-direction: column;
         /* other styles... */
+    }
+    .search-container, .filter-container {
+        width: 90%; /* Adjust the width to fit smaller screens */
+        top: auto;
+        bottom: 10px; /* Position them towards the bottom */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .search-container {
+        bottom: 60px; /* Position search box above the filter box */
+    }
+
+    .filter-container {
+        bottom: 10px; /* Position filter box at the very bottom */
+    }
+
+    #blogSearch, #blogFilter {
+        width: 100%; /* Make the input and select box fill their containers */
+        padding: 10px; /* Adjust padding for better touch accessibility */
     }
 }
