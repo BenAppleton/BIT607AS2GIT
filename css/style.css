@@ -207,11 +207,122 @@ padding-right: 20px;
     border-radius: 5px; /* Rounded corners */
     font-size: 16px; /* Adjust font size as needed */
 }
+.restaurant-food-menu {
+    width: 100%; /* Ensures the main container takes the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+}
+.restaurant-food-menu h1 {
+    text-align: center;
+}
+.restaurant-food-menu section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-bottom: 30px; /* Adds space between each section */
+}
+/* Style the food menu sections */
+.food-menu {
+    flex: 1 1 20%; /* Flex grow, shrink, and basis */
+    margin-right: 20px; 
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: #333333; /* Dark gray text color for the content in food-menu */
+}
+
+/* Style the unordered list inside the food menu */
+.food-menu ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style the list items inside the food menu */
+.food-menu li {
+    margin-bottom: 1.25em; /* Space out each menu item */
+    color: #333333; /* Dark gray text color */
+}
+
+/* Style the section headers within food menu */
+.food-menu h2 {
+    font-size: 2em; /* 30px equivalent */
+    margin-bottom: 0.16em; /* Adjust margin-bottom */
+    color: #333333; /* Dark gray color for headers */
+}
+
+/* Style the menu item headings within list items */
+.food-menu h3 {
+    font-size: 1.5em; /* 24px equivalent */
+    margin-bottom: 0.21em; /* Adjust margin-bottom */
+    color: #333333; /* Dark gray heading color */
+}
+
+/* Style the menu item descriptions within list items */
+.food-menu p {
+    font-size: 1.125em; /* 18px equivalent */
+    color: #555555; /* Medium gray description text color */
+}
+
+/* Style the menu item prices within list items */
+.food-menu p:last-child {
+    font-weight: bold;
+    color: #e71d36; /* Red price text color */
+}
+/* Additional styles specific to each menu section */
+.appetizers .food-menu, .mains .food-menu, .desserts .food-menu {
+    /* Styles common to all sections */
+    border: 1px solid #ddd; /* Adds a border */
+    margin-bottom: 20px; /* Adds bottom margin */
+}
+
+.appetizers .food-menu {
+    /* Specific styles for appetizers section */
+    background-color: #f8f8f8; /* Light background */
+}
+
+.mains .food-menu {
+    /* Specific styles for mains section */
+    background-color: #f0f0f0; /* Different background */
+}
+
+.desserts .food-menu {
+    /* Specific styles for desserts section */
+    background-color: #e8e8e8; /* Another shade of background */
+}
+
+.menu-images {
+    flex: 1 1 45%; /* Flex grow, shrink, and basis for image container */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+}
+
+/* Style the menu images */
+.menu-image1, .menu-image2 {
+    width: 100%; /* Full width of their container */
+    margin-bottom: 20px; /* Space between images */
+}
+
+.menu-image1 img, .menu-image2 img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Maximum width */
+    max-height: 400px; /* Maximum height */
+}
 /* For mobile responsive design helps to resize for smaller screens */
 @media screen and (max-width: 600px) {
-    #blogimg1, #blogimg2, #blogimg3, #blogimg4, #blogimg5, #blogimg6, #squareimage1,#squareimage2, #restaurant, .aboutustext, .aboutusimage, .blogimage {
+    #blogimg1, #blogimg2, #blogimg3, #blogimg4, #blogimg5, #blogimg6, #squareimage1, #squareimage2, #restaurant .aboutustext, .aboutusimage, .blogimage{
         width: 100%;
         margin-left: 0; /* This resets the margin for smaller screens */
+    }
+    .menu-image1, .menu-image2{
+        width: 100%;
+        margin-left: 0; /* This resets the margin for smaller screens */
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .aboutustext {
         text-align: center;
@@ -249,21 +360,38 @@ padding-right: 20px;
     }
     .search-container, .filter-container {
         width: 90%; /* Adjust the width to fit smaller screens */
-        top: 50%; /* Center vertically */
+        top: auto; /* Remove top position */
         left: 50%; /* Center horizontally */
-        transform: translate(-50%, -50%); 
+        transform: translateX(-50%); /* Adjust horizontal centering */
     }
 
     .search-container {
-        bottom: 25px;
+        bottom: 140px; /* Adjust bottom position for search container */
     }
 
     .filter-container {
-        bottom: 275px;
+        bottom: 70px; /* Adjust bottom position for filter container */
     }
 
     #blogSearch, #blogFilter {
         width: 100%; /* Make the input and select box fill their containers */
         padding: 10px; /* Adjust padding for better touch accessibility */
+    }
+    .restaurant-food-menu section {
+        flex-direction: column;
+    }
+    .appetizers .food-menu, .mains .food-menu, .desserts .food-menu {
+        border: none; /* Example: Remove border on smaller screens */
+        padding: 10px; /* Example: Adjust padding */
+    }
+    .food-menu h2, .food-menu h3, .food-menu p {
+        text-align: center;
+    }
+
+    /* If you're using Flexbox for layout in your food-menu class */
+    .food-menu {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
 }
