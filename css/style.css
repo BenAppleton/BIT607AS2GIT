@@ -225,15 +225,16 @@ padding-right: 20px;
 }
 /* Style the food menu sections */
 .food-menu {
-    flex: 1 1 20%; /* Flex grow, shrink, and basis */
+    flex: 1 1 40%; /* Flex grow, shrink, and basis */
     margin-right: 20px; 
     background-color: #f7f7f7; /* Light gray background */
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 30px;
     color: #333333; /* Dark gray text color for the content in food-menu */
+    margin-bottom: 20px; /* Keep margin for all sections */
+    width: 600px; /* Set a fixed width for the text container */
+    height: 825px;
 }
-
 /* Style the unordered list inside the food menu */
 .food-menu ul {
     list-style-type: none; /* Remove default list styling */
@@ -272,25 +273,10 @@ padding-right: 20px;
     color: #e71d36; /* Red price text color */
 }
 /* Additional styles specific to each menu section */
-.appetizers .food-menu, .mains .food-menu, .desserts .food-menu {
+.appetizers .food-menu, .mains .food-menu, .desserts .food-menu, .beverages-red .food-menu, .beverages-white .food-menu, .beverages-beer-cider .food-menu, .beverages-nonalcoholic .food-menu {
     /* Styles common to all sections */
     border: 1px solid #ddd; /* Adds a border */
     margin-bottom: 20px; /* Adds bottom margin */
-}
-
-.appetizers .food-menu {
-    /* Specific styles for appetizers section */
-    background-color: #f8f8f8; /* Light background */
-}
-
-.mains .food-menu {
-    /* Specific styles for mains section */
-    background-color: #f0f0f0; /* Different background */
-}
-
-.desserts .food-menu {
-    /* Specific styles for desserts section */
-    background-color: #e8e8e8; /* Another shade of background */
 }
 
 .menu-images {
@@ -311,6 +297,19 @@ padding-right: 20px;
     max-width: 600px; /* Maximum width */
     max-height: 400px; /* Maximum height */
 }
+.menu-container {
+    border-radius: 15px;
+    background-color: #fff; /* Set a background color for the menu if desired */
+    z-index: 100; /* Ensure it's above other content */
+    padding: 10px;
+    margin-bottom: 20px; /* Keep margin for all sections */
+}
+.menu-container ul {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
 /* For mobile responsive design helps to resize for smaller screens */
 @media screen and (max-width: 600px) {
     #blogimg1, #blogimg2, #blogimg3, #blogimg4, #blogimg5, #blogimg6, #squareimage1, #squareimage2, #restaurant .aboutustext, .aboutusimage, .blogimage{
@@ -323,6 +322,14 @@ padding-right: 20px;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .menu-container li {
+        margin-bottom: 1.25em; /* Space out each menu item */
+        padding-bottom: 10px; /* Add extra padding at the bottom of each <li> */
+        color: #333333; /* Dark gray text color */
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
     }
     .aboutustext {
         text-align: center;
