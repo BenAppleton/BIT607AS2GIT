@@ -321,11 +321,7 @@ padding-right: 20px;
 }
 /* >>>>>>> Mobile responsive <<<<<<<< */
 /* For mobile responsive design helps to resize for smaller screens */
-@media screen and (max-width: 600px) {
-    #menu-image1, #menu-image2, #blogimg1, #blogimg2, #blogimg3, #blogimg4, #blogimg5, #blogimg6, #squareimage1, #squareimage2, #restaurant .aboutustext, .aboutusimage, .blogimage{
-        width: 100%;
-        margin-left: 0; /* This resets the margin for smaller screens */
-    }
+@media screen and (max-width: 600px) { 
         /* THis is for the nav bar on the menu page */
     .restaurant-food-menu section {
         flex-direction: column;
