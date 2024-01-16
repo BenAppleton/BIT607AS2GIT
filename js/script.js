@@ -1,4 +1,4 @@
-// >>>> JS for global navigation <<<< //
+// >>>> JS for global navigation <<<<
 document.getElementById('header-hamburger').addEventListener('click', function() {
   document.querySelector('header .navbar').classList.toggle('active');
 });
@@ -7,7 +7,7 @@ document.getElementById('footer-hamburger').addEventListener('click', function()
   document.querySelector('footer .navbar').classList.toggle('active');
 });
 
-// >>>> JS for blog page <<<< //
+// >>>> JS for blog page <<<<
 // code for the "Load More" button on the blog page
 document.getElementById('loadMore').addEventListener('click', function() {
   var row3 = document.getElementById('row3');

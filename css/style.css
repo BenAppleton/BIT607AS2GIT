@@ -319,6 +319,7 @@ padding-right: 20px;
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px;
 }
+
 /* >>>>>>> Mobile responsive <<<<<<<< */
 /* For mobile responsive design helps to resize for smaller screens */
 @media screen and (max-width: 600px) { 
@@ -407,10 +408,5 @@ padding-right: 20px;
     #blogSearch, #blogFilter {
         width: 100%; /* Make the input and select box fill their containers */
         padding: 10px; /* Adjust padding for better touch accessibility */
-    }
-    .booking-form {
-        width: 100%;
-        height: auto; /* Or min-height if you want to ensure a certain height */
-        overflow: auto; /* Add scroll to the form if content overflows */
     }
 }
