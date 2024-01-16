@@ -8,7 +8,7 @@ document.getElementById('footer-hamburger').addEventListener('click', function()
 });
 
 // >>>> JS for blog page <<<<
-// code for the "Load More" button on the blog page
+// JS for the "Load More" button on the blog page
 document.getElementById('loadMore').addEventListener('click', function() {
   var row3 = document.getElementById('row3');
   var progressBar = document.getElementById('progressBar');

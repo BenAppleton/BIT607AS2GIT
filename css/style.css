@@ -7,6 +7,9 @@ header{
     background-color: rgb(78, 78, 78);
 }
 footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +31,6 @@ body{
     align-items: center;
     background-color: rgb(78, 78, 78); /* Or any color of your choice */
 }
-
 .navbar ul {
     list-style-type: none;
     padding: 0;
@@ -36,7 +38,6 @@ body{
     display: flex;
     align-items: center;
 }
-
 .navbar a {
     color: white;
     text-decoration: none;
@@ -47,7 +48,6 @@ body{
 .navbar a:hover {
     background-color: rgb(34, 34, 34);
 }
-
 .nav-logo img {
     max-height: 50px; /* Adjust as needed */
     margin-right: 20px;
@@ -72,7 +72,6 @@ body{
 
 /* >>>>>>> Home Page <<<<<<<< */
 /* This section is for the home page */
-
 /* Styling for the hero banner on the homepage */
 .heroimage{
     display: flex;
@@ -85,7 +84,6 @@ img {
     max-width: 100%;
     height: auto;
 }
-
 /*This is for the homepage about us section*/
 .homepage-section {
     display: flex;
@@ -94,12 +92,10 @@ img {
     flex-wrap: wrap; /* for mobile responsive design drops the image below the about us text */
     color: white;
 }
-
-.aboutustext {
+.home-aboutustext {
     text-align: left;
     margin: 10px;
 }
-
 .aboutusimage1 {
     padding: 5px;
 }
@@ -116,16 +112,13 @@ article {
     color: white;
     width: auto;
 }
-
 .blog {
 padding-left: 20px;
 padding-right: 20px;
 }
-
 .blogimage {
     padding: 5px;
 }
-
 .blogtext {
     text-align: center;
     margin: 10px;
@@ -150,7 +143,6 @@ padding-right: 20px;
     border-radius: 5px;
     margin: 10px auto;
 }
-
 #progressBar {
     width: 75%;
     height: 20px;
@@ -165,7 +157,6 @@ padding-right: 20px;
     align-items: center;
     padding: 5px;
 }
-
 .search-container {
     position: absolute;
     top: 50%; /* Center vertically */
@@ -173,7 +164,6 @@ padding-right: 20px;
     transform: translate(-50%, -50%); /* Adjust the position to truly center it */
     z-index: 10; /* Ensure it's above the image */
 }
-
 #blogSearch {
     width: 500px; /* Adjust width as needed */
     padding: 10px;
@@ -191,12 +181,10 @@ padding-right: 20px;
     font-size: 14px;
     text-align: center;
 }
-
 /* Different background colors for different tags, if desired */
 .blog-tag.recipes { 
     background-color: #28a745; /* Example color for recipes tag */
 }
-
 .blog-tag.cultural { 
     background-color: #dc3545; /* Example color for cultural tag */
 }
@@ -216,8 +204,6 @@ padding-right: 20px;
 }
 
 /* >>>>>>> Menu Page <<<<<<<< */
-/* This section of css is for the menu page elements */
-
 /* For the food menu navigation (not the global navbar) */
 .restaurant-food-menu {
     width: 100%; /* Ensures the main container takes the full width */
@@ -227,13 +213,6 @@ padding-right: 20px;
 }
 .restaurant-food-menu h1 {
     text-align: center;
-}
-.restaurant-food-menu section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensures responsiveness */
-    margin-bottom: 30px; /* Adds space between each section */
 }
 /* Style food menu navigation */
 .menu-container {
@@ -249,7 +228,6 @@ padding-right: 20px;
     padding-right: 10px;
     align-items: center;
 }
-
 /* Styling for food portion of the menu page */
 .food-menu-section {
     display: flex;
@@ -259,7 +237,6 @@ padding-right: 20px;
     padding: 20px;
     margin: 0 auto;
 }
-
 .food-menu {
     flex: 0 0 600px; /* Do not grow or shrink, fixed width of 600px */
     background-color: #f7f7f7;
@@ -273,103 +250,85 @@ padding-right: 20px;
 /*>>>> Text styling for menu page <<<<*/
 /* Style the unordered list inside the food menu */
 .food-menu ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
+    list-style-type: none;
+    padding: 0;
 }
-
 /* Style the list items inside the food menu */
 .food-menu li {
-    margin-bottom: 1.25em; /* Space out each menu item */
-    color: #333333; /* Dark gray text color */
+    margin-bottom: 1.25em;
+    color: #333333;
 }
-
 /* Style the section headers within food menu */
 .food-menu h2 {
-    font-size: 2em; /* 30px equivalent */
-    margin-bottom: 0.16em; /* Adjust margin-bottom */
-    color: #333333; /* Dark gray color for headers */
+    font-size: 2em;
+    margin-bottom: 0.16em;
+    color: #333333;
 }
-
 /* Style the menu item headings within list items */
 .food-menu h3 {
-    font-size: 1.5em; /* 24px equivalent */
-    margin-bottom: 0.21em; /* Adjust margin-bottom */
-    color: #333333; /* Dark gray heading color */
+    font-size: 1.5em;
+    margin-bottom: 0.21em; 
+    color: #333333;
 }
-
 /* Style the menu item descriptions within list items */
 .food-menu p {
-    font-size: 1.125em; /* 18px equivalent */
-    color: #555555; /* Medium gray description text color */
+    font-size: 1.125em;
+    color: #555555;
 }
-
 /* Style the menu item prices within list items */
 .food-menu p:last-child {
     font-weight: bold;
-    color: #e71d36; /* Red price text color */
+    color: #e71d36;
 }
 .food-menu-images-container {
     flex: 0 0 600px; /* Do not grow or shrink, fixed width of 600px */
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
 }
 
 .food-menu-images-container img {
-    width: 100%; /* Full width of their container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
     margin-bottom: 10px;
+}
+
+/* >>>> Hours Page <<<< */
+.hours-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+.hours-details {
+    flex: auto;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 10px;
+    width: auto;
+}
+.hours-details ul{
+    list-style-type: none;
+    padding: 0px;
+}
+/* fixes the footer to the bottom of the webpage just for the hours page */
+.hours-footer{
+    position: fixed;
 }
 
 /* >>>>>>> Mobile responsive <<<<<<<< */
 /* For mobile responsive design helps to resize for smaller screens */
 @media screen and (max-width: 600px) { 
-        /* THis is for the nav bar on the menu page */
-    .restaurant-food-menu section {
-        flex-direction: column;
-    }
-    .food-menu-section {
-        text-align: center; /* Center the text of each section */
-    }
-
-    .food-menu {
-        width: 100%; /* Full width for the text container */
-        height: auto; /* Allow the height to be determined by content */
-        margin-bottom: 20px; /* Space between the text and images */
-        margin-right: 0px;
-    }
-
-    .food-menu-images-container {
-        width: 100%; /* Full width for the image container */
-        display: flex;
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center images horizontally */
-    }
-
-    .food-menu-images-container img {
-        width: auto; /* Adjust width to maintain aspect ratio */
-        max-width: 100%; /* Full width of their container */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 20px; /* Space between images */
-    }
-
-    .food-menu-images-container img:last-child {
-        margin-bottom: 0px; /* No extra space after the last image */
-    }
-
-    .aboutustext {
-        text-align: center;
-    }
-    .blog {
-        max-width: 100%;
-    }
+    /* >>> Global mobile responsive settings << */
     .hamburger {
         display: flex;
     }
-
     header .navbar ul, footer .navbar ul {
         display: none;
     }
-
     header .navbar.active ul, footer .navbar.active ul {
         display: flex;
         flex-direction: column;
@@ -377,18 +336,54 @@ padding-right: 20px;
     footer {
         flex-direction: column;
     }
-
     .footer-text {
         order: 2; /* Ensures the text is below the navbar */
         width: 100%; /* Makes the text take full width */
         margin-top: 10px; /* Adds some space above the text */
     }
-
     /* Update styles for the navbar in the footer to handle expanded menu */
     footer .navbar.active ul {
         display: flex;
         flex-direction: column;
-        /* other styles... */
+    }
+
+    /* >>>> Menu page mobile responsive design <<<< */
+    .restaurant-food-menu section {
+        flex-direction: column;
+    }
+    .food-menu-section {
+        text-align: center; /* Center the text of each section */
+    }
+    .food-menu {
+        width: 100%; /* Full width for the text container */
+        height: auto; /* Allow the height to be determined by content */
+        margin-bottom: 20px; /* Space between the text and images */
+        margin-right: 0px;
+    }
+    .food-menu-images-container {
+        width: 100%; /* Full width for the image container */
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+    }
+    .food-menu-images-container img {
+        width: auto; /* Adjust width to maintain aspect ratio */
+        max-width: 100%; /* Full width of their container */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Space between images */
+    }
+    .food-menu-images-container img:last-child {
+        margin-bottom: 0px; /* No extra space after the last image */
+    }
+    
+    /* >>>> Home page moble responsive design <<<< */
+    .home-aboutustext {
+        text-align: center;
+    }
+
+    /* >>>> Blog page mobile responsive design <<<< */
+    .blog {
+        max-width: 100%;
     }
     .search-container, .filter-container {
         width: 90%; /* Adjust the width to fit smaller screens */
@@ -396,17 +391,37 @@ padding-right: 20px;
         left: 50%; /* Center horizontally */
         transform: translateX(-50%); /* Adjust horizontal centering */
     }
-
     .search-container {
         bottom: 140px; /* Adjust bottom position for search container */
     }
-
     .filter-container {
         bottom: 70px; /* Adjust bottom position for filter container */
     }
-
     #blogSearch, #blogFilter {
-        width: 100%; /* Make the input and select box fill their containers */
-        padding: 10px; /* Adjust padding for better touch accessibility */
+        width: 100%;
+        padding: 10px;
+    }
+    /* >>>> Hours page mobile responsive design <<<< */
+    .hours-container {
+        flex-direction: column;
+        align-items: stretch; /* helps to get the most width out of the iframe in mobile view */
+    }
+    .hours-details {
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    .google-calendar-container {
+        padding-top: 0; /* Override the padding-top for mobile */
+        height: 50vh; /* Set a height relative to the viewport */
+        overflow: auto; /* Allow scrolling on small screens */
+    }
+    .google-calendar-container iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
     }
 }
