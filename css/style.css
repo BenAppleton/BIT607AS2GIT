@@ -75,7 +75,12 @@ body{
 /* >>>>>>> Home Page <<<<<<<< */
 /* This section is for the home page */
 /* Styling for the hero banner on the homepage */
-.heroimage{
+.homepage-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heroimage {
     display: flex;
     justify-content: center;
     align-items: center;
