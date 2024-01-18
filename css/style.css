@@ -213,6 +213,7 @@ padding-right: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 20px;
 }
 .menu-selection {
     width: 300px;
@@ -451,9 +452,9 @@ padding-right: 20px;
     }
     /* styles images from the menu page */
     .appetizers-food-image1, .appetizers-food-image2, .mains-food-image1, .mains-food-image2, .dessert-food-image1, .dessert-food-image2,
-    .wine-red-food-image1, .wine-white-food-image1, .beer-food-image1, .drink-food-image1, .drink-food-image2 {
+    .wine-red-food-image1,.wine-red-food-image2, .wine-white-food-image1,.wine-white-food-image2, .beer-food-image1, .drink-food-image1, .drink-food-image2 {
         max-width: 100%;
-        max-height: 90vh;
+        height: auto;
         margin: 0px;
         margin-bottom: 10px;
     }
