@@ -5,6 +5,7 @@
 }
 header{
     background-color: rgb(78, 78, 78);
+    margin-bottom: 10px;
 }
 footer {
     left: 0;
@@ -16,6 +17,7 @@ footer {
     background-color: rgb(78, 78, 78);
     text-align: center;
     padding: 20px;
+    margin-top: 10px;
 }
 .footer-text {
     margin-left: 20px; /* Adds some space between the navbar and the text */
@@ -23,7 +25,7 @@ footer {
 }
 body{
     margin: 0px;
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(231, 238, 253);
 }
 .navbar {
     display: flex;
@@ -90,17 +92,20 @@ img {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap; /* for mobile responsive design drops the image below the about us text */
-    color: white;
+    color: black;
 }
 .home-aboutustext {
     text-align: left;
     margin: 10px;
+    background-color: rgb(173, 197, 218);
+    border-radius: 15px;
+    padding: 20px;
 }
 .aboutusimage1 {
-    padding: 5px;
+    padding: 10px;
 }
 .aboutusimage2 {
-    padding: 5px;
+    padding: 10px;
 }
 /* >>>>>>> Blog Page <<<<<<<< */
 /*This section of css is for the blog page elements */
@@ -109,7 +114,7 @@ article {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    color: white;
+    color: black;
     width: auto;
 }
 .blog {
@@ -165,17 +170,16 @@ padding-right: 20px;
     z-index: 10; /* Ensure it's above the image */
 }
 #blogSearch {
-    width: 500px; /* Adjust width as needed */
+    width: 500px;
     padding: 10px;
-    border: 5px solid #4b2c85; /* Adjust border color as needed */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Adjust font size as needed */
+    border: 5px solid #4b2c85;
+    border-radius: 5px;
+    font-size: 16px;
 }
 .blog-tag {
     display: inline-block;
     padding: 5px 10px;
     margin-top: 10px;
-    background-color: #007bff; /* Example color */
     color: white;
     border-radius: 5px;
     font-size: 14px;
@@ -204,93 +208,165 @@ padding-right: 20px;
 }
 
 /* >>>>>>> Menu Page <<<<<<<< */
-/* For the food menu navigation (not the global navbar) */
-.restaurant-food-menu {
-    width: 100%; /* Ensures the main container takes the full width */
+/* >>>> Menu Page Styling <<<< */
+.menu-container {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers the content horizontally */
+    flex-direction: row;
+    justify-content: center;
 }
-.restaurant-food-menu h1 {
+.menu-selection {
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.menu-list {
+    width: 500px;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
     text-align: center;
 }
-/* Style food menu navigation */
-.menu-container {
-    border-radius: 15px;
-    background-color: #fff; /* Set a background color for the menu if desired */
-    z-index: 100; /* Ensure it's above other content */
-    padding: 10px;
-    margin-bottom: 20px; /* Keep margin for all sections */
-}
-.menu-container ul {
-    list-style-type: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
-}
-/* Styling for food portion of the menu page */
-.food-menu-section {
+.menu-images-container {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 0 auto;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.food-menu {
-    flex: 0 0 600px; /* Do not grow or shrink, fixed width of 600px */
-    background-color: #f7f7f7;
-    padding: 20px;
-    border-radius: 10px;
-    color: #333333;
-    height: 820px;
-    width: 200;
-    margin-right: 10px;
+/* >>>> Menu images styling <<<< */
+.appetizers-food-image1 {
+    width: 400px;
+    height: 450px;
+    margin: 5px;
+}
+.appetizers-food-image2 {
+    width: 400px;
+    height: 450px;
+    margin: 5px;
+}
+.mains-food-image1 {
+    width: 400px;
+    height: 500px;
+    margin: 5px;
+}
+.mains-food-image2 {
+    width: 400px;
+    height: 500px;
+    margin: 5px;
+}
+.dessert-food-image1 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.dessert-food-image2 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.wine-red-food-image1 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.wine-red-food-image2 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.wine-white-food-image1 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.wine-white-food-image2 {
+    width: 400px;
+    height: 600px;
+    margin: 5px;
+}
+.beer-food-image1 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.beer-food-image2 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.drink-food-image1 {
+    width: 400px;
+    height: 400px;
+    margin: 5px;
+}
+.drink-food-image2 {
+    width: 400px;
+    height: 300px;
+    margin: 5px;
+}
+#menu-box1 {
+    background-color: rgb(222, 222, 238);
+}
+#menu-box2 {
+    background-color: rgb(181, 181, 189);
+}
+#menu-box3 {
+    background-color: red;
+}
+#menu-box4 {
+    background-color: blue;
 }
 /*>>>> Text styling for menu page <<<<*/
 /* Style the unordered list inside the food menu */
-.food-menu ul {
+.menu-list ul {
     list-style-type: none;
     padding: 0;
 }
 /* Style the list items inside the food menu */
-.food-menu li {
+.menu-list li {
     margin-bottom: 1.25em;
-    color: #333333;
+    color: black;
 }
 /* Style the section headers within food menu */
-.food-menu h2 {
+.menu-list h2 {
     font-size: 2em;
     margin-bottom: 0.16em;
-    color: #333333;
+    color: black;
+}
+.menu-list hr {
+    border: none;
+    height: 2px;
+    background-color: black;
 }
 /* Style the menu item headings within list items */
-.food-menu h3 {
+.menu-list h3 {
     font-size: 1.5em;
     margin-bottom: 0.21em; 
-    color: #333333;
+    color: black;
 }
 /* Style the menu item descriptions within list items */
-.food-menu p {
+.menu-list p {
     font-size: 1.125em;
-    color: #555555;
+    color: black;
 }
 /* Style the menu item prices within list items */
-.food-menu p:last-child {
+.menu-list p:last-child {
     font-weight: bold;
-    color: #e71d36;
+    color: #ff001e;
 }
-.food-menu-images-container {
-    flex: 0 0 600px; /* Do not grow or shrink, fixed width of 600px */
-    display: flex;
-    flex-direction: column;
+.menu-navigation a {
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu-navigation ul {
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
-.food-menu-images-container img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
 
 /* >>>> Hours Page <<<< */
 .hours-container {
@@ -304,7 +380,7 @@ padding-right: 20px;
 .hours-details {
     flex: auto;
     align-items: center;
-    background-color: aliceblue;
+    background-color: rgb(173, 197, 218);
     border-radius: 20px;
     padding: 20px;
     margin-left: 10px;
@@ -348,37 +424,38 @@ padding-right: 20px;
     }
 
     /* >>>> Menu page mobile responsive design <<<< */
-    .restaurant-food-menu section {
+    /* Controls the menu selection container */
+    .menu-container {
         flex-direction: column;
+        max-width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
     }
-    .food-menu-section {
-        text-align: center; /* Center the text of each section */
+    .menu-selection {
+        width: auto;
+        height: auto; 
+        margin: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
     }
-    .food-menu {
-        width: 100%; /* Full width for the text container */
-        height: auto; /* Allow the height to be determined by content */
-        margin-bottom: 20px; /* Space between the text and images */
-        margin-right: 0px;
-    }
-    .food-menu-images-container {
-        width: 100%; /* Full width for the image container */
-        display: flex;
-        flex-direction: column; /* Stack images vertically */
-        align-items: center; /* Center images horizontally */
-    }
-    .food-menu-images-container img {
-        width: auto; /* Adjust width to maintain aspect ratio */
-        max-width: 100%; /* Full width of their container */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 20px; /* Space between images */
-    }
-    .food-menu-images-container img:last-child {
-        margin-bottom: 0px; /* No extra space after the last image */
-    }
-    
-    /* >>>> Home page moble responsive design <<<< */
-    .home-aboutustext {
+    /* controls the food menu items */
+    .menu-list {
+        margin: 0px;
+        width: auto;
+        height: auto;
+        padding: 10px;
+        margin-bottom: 10px;
         text-align: center;
+    }
+    /* styles images from the menu page */
+    .appetizers-food-image1, .appetizers-food-image2, .mains-food-image1, .mains-food-image2, .dessert-food-image1, .dessert-food-image2,
+    .wine-red-food-image1, .wine-white-food-image1, .beer-food-image1, .drink-food-image1, .drink-food-image2 {
+        max-width: 100%;
+        max-height: 90vh;
+        margin: 0px;
+        margin-bottom: 10px;
     }
 
     /* >>>> Blog page mobile responsive design <<<< */
@@ -405,6 +482,9 @@ padding-right: 20px;
     .hours-container {
         flex-direction: column;
         align-items: stretch; /* helps to get the most width out of the iframe in mobile view */
+    }
+    .hours-footer{
+        position:relative;
     }
     .hours-details {
         text-align: center;
