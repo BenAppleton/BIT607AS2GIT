@@ -11,7 +11,7 @@
     <body>
         <header>
             <header role="banner">
-                <nav class="navbar" role="navigation">
+                <nav class="navbar" role="navigation" aria-label="Primary Navigation">
                     <div class="nav-logo">
                         <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
                     </div>
@@ -31,7 +31,7 @@
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main role="main">
                 <div class="heroimageblog">
                     <picture>
                         <!-- For mobile view (max-width: 600px), display the mobile image -->
@@ -54,7 +54,7 @@
                 </div>
                     <article id="row1">
                         <!-- Blog 1 -->
-                        <div class="blog" id="blog1" tabindex="0">
+                        <div class="blog" id="blog1" tabindex="0" role="article">
                             <div class="blogimage" id="blogimage1">
                                 <img src="images/square300.png" id="blogimg1" alt="this is an image of the restaurant" width="600px" height="400px">
                             </div>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <!-- Blog 2 -->
-                        <div class="blog" id="blog2" tabindex="0">
+                        <div class="blog" id="blog2" tabindex="0" role="article">
                             <div class="blogimage" id="blogimage2">
                                 <img src="images/square300.png" id="blogimg2" alt="this is an image of the restaurant" width="600px" height="400px">
                             </div>
@@ -82,7 +82,7 @@
                     </article>
                     <article id="row2">
                         <!-- Blog 3 -->
-                        <div class="blog" id="blog3" tabindex="0">
+                        <div class="blog" id="blog3" tabindex="0" role="article">
                             <div class="blogimage" id="blogimage3">
                                 <img src="images/square300.png" id="blogimg1" alt="this is an image of the restaurant" width="600px" height="400px">
                             </div>
@@ -95,7 +95,7 @@
                             </div>
                         </div>
                         <!-- Blog 4 -->
-                        <div class="blog" id="blog4" tabindex="0">
+                        <div class="blog" id="blog4" tabindex="0" role="article">
                             <div class="blogimage" id="blogimage4" >
                                 <img src="images/square300.png" id="blogimg2" alt="this is an image of the restaurant" width="600px" height="400px">
                             </div>
@@ -112,7 +112,7 @@
                     <button id="loadMore">Load More</button>
                     <article id="row3">
                         <!-- Blog 5 -->
-                        <div class="blog" id="blog5" tabindex="0">
+                        <div class="blog" id="blog5" tabindex="0" role="article">
                             <div class="blogimage" id="blogimage5">
                                 <img src="images/square300.png" id="blogimg1" alt="this is an image of the restaurant" width="600px" height="400px">
                             </div>
@@ -125,7 +125,7 @@
                             </div>
                         </div>
                         <!-- Blog 6 -->
-                        <div class="blog" id="blog6" tabindex="0">
+                        <div class="blog" id="blog6" tabindex="0" role="article">
                             <div class="blogimage" id="blogimage6">
                                 <img src="images/square300.png" id="blogimg2" alt="this is an image of the restaurant" width="600px" height="400px">
                             </div>
@@ -142,30 +142,30 @@
                     <div id="progressBar"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </main>
-        <footer role="navigation">
-            <nav class="navbar">
-                <div class="nav-logo">
-                    <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
+            <footer role="contentinfo">
+                <nav class="navbar" role="navigation" aria-label="Footer Navigation">
+                    <div class="nav-logo">
+                        <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
+                    </div>
+                    <!-- Hamburger Menu Icon -->
+                    <button class="hamburger" id="footer-hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <!-- Navigation Links with 'active' class added manually for testing -->
+                    <ul id="footer-nav-links" class="active">
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="booking.html">Make a booking</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="hours.html">Hours</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-text" tabindex="0">
+                    &copy; Haukai Restaurant 2024
                 </div>
-                <!-- Hamburger Menu Icon -->
-                <button class="hamburger" id="footer-hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-                <!-- Navigation Links with 'active' class added manually for testing -->
-                <ul id="footer-nav-links" class="active">
-                    <li><a href="menu.html">Menu</a></li>
-                    <li><a href="booking.html">Make a booking</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="hours.html">Hours</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </nav>
-            <div class="footer-text" tabindex="0">
-                &copy; Haukai Restaurant 2024
-            </div>
-        </footer>
+            </footer>
         <script src="js/script.js"></script>
     </body>
 </html>

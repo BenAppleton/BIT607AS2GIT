@@ -10,7 +10,7 @@
     </head>
     <body>
         <header role="banner">
-            <nav class="navbar" role="navigation">
+            <nav class="navbar" role="navigation" aria-label="Primary Navigation">
                 <div class="nav-logo">
                     <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
                 </div>
@@ -30,6 +30,7 @@
                 </ul>
             </nav>
         </header>
+        <main role="main">
             <section class="menu-container">
                 <div class="menu-selection" id="menu-box1">
                     <nav class="menu-navigation">
@@ -416,30 +417,31 @@
                     <div class="drink-food-image2" id="menu-box4" tabindex="0">4</div>
                 </div>
             </section>
-            <footer role="contentinfo">
-                <nav class="navbar" role="navigation">
-                    <div class="nav-logo">
-                        <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
-                    </div>
-                    <!-- Hamburger Menu Icon -->
-                    <button class="hamburger" id="footer-hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    <!-- Navigation Links with 'active' class added manually for testing -->
-                    <ul id="footer-nav-links" class="active">
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="booking.html">Make a booking</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="hours.html">Hours</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                    </ul>
-                </nav>
-                <div class="footer-text" tabindex="0">
-                    &copy; Haukai Restaurant 2024
+        </main>
+        <footer role="contentinfo">
+            <nav class="navbar" role="navigation" aria-label="Footer Navigation">
+                <div class="nav-logo">
+                    <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
                 </div>
-            </footer>
+                <!-- Hamburger Menu Icon -->
+                <button class="hamburger" id="footer-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Navigation Links with 'active' class added manually for testing -->
+                <ul id="footer-nav-links" class="active">
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="booking.html">Make a booking</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="hours.html">Hours</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="footer-text" tabindex="0">
+                &copy; Haukai Restaurant 2024
+            </div>
+        </footer>
         <script src="js/script.js"></script>
     </body>
 </html>
