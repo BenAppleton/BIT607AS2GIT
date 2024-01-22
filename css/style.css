@@ -401,6 +401,20 @@ padding-right: 20px;
     position: fixed;
 }
 
+/* >>>> Booking Page <<<< */
+.booking-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form iframe {
+    display: block;
+    margin: auto;
+}
+
 /* >>>>>>> Mobile responsive <<<<<<<< */
 /* For mobile responsive design helps to resize for smaller screens */
 @media screen and (max-width: 600px) { 

@@ -9,7 +9,7 @@
         <title>Haukai Restaurant</title>
     </head>
     <body>
-        <header>
+        <header role="banner">
             <nav class="navbar" role="navigation">
                 <div class="nav-logo">
                     <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
@@ -20,7 +20,6 @@
                     <span></span>
                     <span></span>
                 </button>
-                <!-- Navigation Links with 'active' class added manually for testing -->
                 <ul id="header-nav-links" class="active">
                     <li><a href="menu.html">Menu</a></li>
                     <li><a href="booking.html">Make a booking</a></li>
@@ -30,17 +29,17 @@
                 </ul>
             </nav>
         </header>
+        <main role="main"></main>
         <div class="heroimage">
-            <picture>
+            <picture tabindex="0">
                 <!-- For mobile view (max-width: 600px), display the mobile image -->
-                <source media="(max-width: 600px)" srcset="images/homepageheromobile.png" id="restaurantmobile" width="600px" height="400px">
+                <source media="(max-width: 600px)" srcset="images/homepageheromobile.png">
                 <!-- For desktop view, display the original image -->
                 <img src="images/homepagehero.png" id="restaurant" alt="This is a picture of inside the restaurant" width="1600px" height="600px">
             </picture>
         </div>
-        <main role="main">
             <section class="homepage-section">
-                <div class="home-aboutustext">
+                <div class="home-aboutustext" tabindex="0">
                     <h2>About Haukai Restaurant</h2>
                     <p>Welcome to Haukai Restaurant where the rich flavors of Māori kai blend with the serene beauty of the Bay of Islands.</p>
                     <p>Founded by a passionate couple dedicated to celebrating and sharing the essence of Māori cuisine, Haukai Restaurant</p>
@@ -49,7 +48,7 @@
                 </div>
             </section>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <nav class="navbar" role="navigation">
                 <div class="nav-logo">
                     <a href="index.html"><img src="images/logo.png" alt="Haukai Restaurant Logo" width="150px" height="75px"></a>
@@ -69,7 +68,7 @@
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
-            <div class="footer-text">
+            <div class="footer-text" tabindex="0">
                 &copy; Haukai Restaurant 2024
             </div>
         </footer>
