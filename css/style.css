@@ -358,8 +358,9 @@ padding-right: 20px;
 }
 /* Style the menu item prices within list items */
 .menu-list p:last-child {
+    font-size: 1.125em;
     font-weight: bold;
-    color: #ff001e;
+    color: black;
 }
 .menu-navigation a {
     font-size: 1.2em;
