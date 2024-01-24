@@ -131,6 +131,21 @@ article {
 padding-left: 20px;
 padding-right: 20px;
 }
+.heroimageblog {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    border-radius: 15px;
+    background-color: black;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.blogheroimage {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
 .blogimage {
     padding: 5px;
 }
@@ -166,14 +181,11 @@ padding-right: 20px;
     transition: width 0.5s ease-in-out;
 }
 .heroimageblog {
+    position: relative; /* Needed for absolute positioning inside */
     display: flex;
     justify-content: center;
-    max-width: 100%;
-    border-radius: 15px;
-    background-color: black;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding: 5px;
 }
 .search-container {
     position: absolute;
@@ -453,13 +465,15 @@ padding-right: 20px;
     }
     /* >>>> Home page <<<< */
     .heroimage {
-        height: 600px;
+        position: relative;
+        overflow: hidden;
+        height: auto; /* Adjust this value based on your design needs */
         margin-left: 10px;
         margin-right: 10px;
     }
 
     .heroimage img {
-        height: 600px;
+        height: auto;
         object-fit: cover;
         object-position: center center; /* Adjusts the focal point of the image */
     }
@@ -504,9 +518,9 @@ padding-right: 20px;
     }
     .heroimageblog {
         position: relative;
+        overflow: hidden;
         height: 600px; /* Adjust this value based on your design needs */
-        margin-left: 10px;
-        margin-right: 10px;
+
     }
     .heroimageblog img {
         height: 600px;
@@ -528,6 +542,15 @@ padding-right: 20px;
     #blogSearch, #blogFilter {
         width: 100%;
         padding: 10px;
+    }
+    .blogimage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        max-width: 95vw;
+        height: auto;
     }
     /* >>>> Hours page mobile responsive design <<<< */
     .hours-container {
