@@ -255,10 +255,18 @@ padding-right: 20px;
     padding: 5px;
     text-align: center;
 }
+/* This is flex box with the menu-section flex box, it allows the image portion to display as a column on desktop */
 .menu-images-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+/* This fits the food image to the menu image container stopping overflow */
+.menu-images-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 /* >>>> Menu images styling <<<< */
 .appetizers-food-image1 {
@@ -453,10 +461,11 @@ padding-right: 20px;
     footer {
         flex-direction: column;
     }
+    /* This ensures that the copyright text displays below the footer mega menu */
     .footer-text {
-        order: 2; /* Ensures the text is below the navbar */
-        width: 100%; /* Makes the text take full width */
-        margin-top: 10px; /* Adds some space above the text */
+        order: 2;
+        width: 100%;
+        margin-top: 10px;
     }
     /* Update styles for the navbar in the footer to handle expanded menu */
     footer .navbar.active ul {
