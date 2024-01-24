@@ -83,13 +83,18 @@ body{
 .heroimage {
     display: flex;
     justify-content: center;
+    max-width: 100%;
+    border-radius: 15px;
+    background-color: black;
     align-items: center;
-    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /*the ID for the homepage hero image*/
-img {
+.hompageimage {
     max-width: 100%;
     height: auto;
+    align-items: center;
 }
 /*This is for the homepage about us section*/
 .homepage-section {
@@ -161,11 +166,14 @@ padding-right: 20px;
     transition: width 0.5s ease-in-out;
 }
 .heroimageblog {
-    position: relative; /* Needed for absolute positioning inside */
     display: flex;
     justify-content: center;
+    max-width: 100%;
+    border-radius: 15px;
+    background-color: black;
     align-items: center;
-    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .search-container {
     position: absolute;
@@ -445,11 +453,9 @@ padding-right: 20px;
     }
     /* >>>> Home page <<<< */
     .heroimage {
-        position: relative;
-        overflow: hidden;
-        height: 600px; /* Adjust this value based on your design needs */
-        padding-left: 5px;
-        padding-right: 5px;
+        height: 600px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .heroimage img {
@@ -498,10 +504,9 @@ padding-right: 20px;
     }
     .heroimageblog {
         position: relative;
-        overflow: hidden;
         height: 600px; /* Adjust this value based on your design needs */
-        padding-left: 5px;
-        padding-right: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .heroimageblog img {
         height: 600px;
