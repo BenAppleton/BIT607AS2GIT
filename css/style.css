@@ -204,6 +204,14 @@ padding: 20px;
     font-size: 14px;
     text-align: center;
 }
+.blog-headline h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+.blog-headline hr {
+    text-align: center;
+    width: 50%;
+}
 /* Different background colors for different tags, if desired */
 .blog-tag.recipes { 
     background-color: #28a745; /* Example color for recipes tag */
@@ -321,7 +329,14 @@ padding: 20px;
     height: 300px;
     margin: 5px;
 }
-
+.menu-headline h1 {
+    text-align: center;
+    font-size: 2.5em;
+}
+.menu-headline hr {
+    text-align: center;
+    width: 50%;
+}
 #menu-box3 {
     background-color: red;
 }
