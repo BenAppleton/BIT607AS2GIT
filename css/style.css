@@ -328,7 +328,7 @@ padding: 20px;
 }
 .drink-food-image2 {
     width: 400px;
-    height: 300px;
+    height: 400px;
     margin: 5px;
 }
 .menu-headline h1 {
@@ -340,12 +340,6 @@ padding: 20px;
     height: 1px;
     background-color: black;
     border: none;
-}
-#menu-box3 {
-    background-color: red;
-}
-#menu-box4 {
-    background-color: blue;
 }
 /*>>>> Text styling for menu page <<<<*/
 /* Style the unordered list inside the food menu */
@@ -550,9 +544,13 @@ padding: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
-        max-width: 95vw;
+        width: auto;
+    }
+    .blogimage img {
+        width: 100vw;
         height: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     /* >>>> Hours page mobile responsive design <<<< */
     .hours-container {
