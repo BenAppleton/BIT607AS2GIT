@@ -249,6 +249,17 @@ padding: 20px;
 .blog-tag.cultural { 
     background-color: #dc3545;
 }
+/* Hides the label on the text bar used for AIRA purposes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 /* >>>>>>> Menu Page <<<<<<<< */
 /* >>>> This styles the container that hold text and image elements <<<< */
