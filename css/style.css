@@ -71,6 +71,14 @@ body{
     background-color: white;
     margin: 2px 0; /* This creates space between the lines */
 }
+h1 {
+    font-size: 2.5em;
+}
+hr {
+    height: 0.1em;
+    background-color: black;
+    border: none;
+}
 
 /* >>>>>>> Home Page <<<<<<<< */
 /* This section is for the home page */
@@ -107,9 +115,12 @@ body{
 .home-aboutustext {
     text-align: left;
     margin: 10px;
-    background-color: rgb(173, 197, 218);
+    background-color: rgb(222, 222, 238);
     border-radius: 15px;
     padding: 20px;
+}
+.home-aboutustext h1 {
+    text-align: center;
 }
 
 /* >>>>>>> Blog Page <<<<<<<< */
@@ -171,13 +182,13 @@ padding: 20px;
 }
 .search-container {
     position: absolute;
-    top: 40%; /* Center vertically */
+    top: 55%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%);
 }
 .filter-container {
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -206,13 +217,9 @@ padding: 20px;
 }
 .blog-headline h1 {
     text-align: center;
-    font-size: 2.5em;
 }
 .blog-headline hr {
     width: 50%;
-    height: 0.1em;
-    background-color: black;
-    border: none;
 }
 /* Different background colors for different tags, if desired */
 .blog-tag.recipes { 
@@ -333,13 +340,9 @@ padding: 20px;
 }
 .menu-headline h1 {
     text-align: center;
-    font-size: 2.5em;
 }
 .menu-headline hr {
     width: 50%;
-    height: 0.1em;
-    background-color: black;
-    border: none;
 }
 /*>>>> Text styling for menu page <<<<*/
 /* Style the unordered list inside the food menu */
@@ -357,11 +360,6 @@ padding: 20px;
     font-size: 2em;
     margin-bottom: 0.16em;
     color: black;
-}
-.menu-list hr {
-        height: 0.1em;
-        background-color: black;
-        border: none;
 }
 /* Style the menu item headings within list items */
 .menu-list h3 {
@@ -398,15 +396,34 @@ padding: 20px;
 }
 
 /* >>>> Contact page <<<< */
-.google-map-container {
-    overflow:hidden;
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+.contact-details {
+    width: 20vw;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
     padding: 10px;
+    background-color: rgb(222, 222, 238);
 }
-.hours-details hr {
-    height: 0.1em;
-    background-color: black;
-    border: none;
+.google-map-container {
+    width: auto;
+    height: auto;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 5px;
 }
+.contact-details ul{
+    list-style-type: none;
+}
+.contact-footer {
+    position: fixed;
+}
+
 /* >>>> Hours Page <<<< */
 .hours-container {
     display: flex;
@@ -414,12 +431,12 @@ padding: 20px;
     align-items: flex-start;
     padding: 20px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 50vw;
 }
 .hours-details {
     flex: auto;
     align-items: center;
-    background-color: rgb(173, 197, 218);
+    background-color: rgb(222, 222, 238);
     border-radius: 20px;
     padding: 20px;
     margin-right: 10px;
@@ -428,10 +445,6 @@ padding: 20px;
 .hours-details ul{
     list-style-type: none;
 }
-.contact-footer {
-    position: fixed;
-}
-
 /* >>>> Booking Page <<<< */
 .booking-form {
     text-align: center;
@@ -558,34 +571,29 @@ padding: 20px;
         padding-right: 10px;
     }
     /* >>>> Hours page mobile responsive design <<<< */
-    .hours-container {
-        flex-direction: column;
-        align-items: stretch;
-    }
     .hours-footer{
         position:relative;
     }
-    .hours-details {
+    .hours-container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        padding: 20px;
-        box-sizing: border-box;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .hours-details {
+        min-width: 90vw;
         margin-bottom: 10px;
         margin-right: 0px;
     }
     .google-calendar-container {
-        padding-top: 0;
         height: 50vh;
         overflow: auto;
     }
     .google-calendar-container iframe {
-        position: relative;
-        width: 100%;
+        width: 90vw;
         height: 100%;
-        overflow: auto;
     }
     /* >>>> Booking page <<<< */
     .booking-form {
@@ -603,5 +611,25 @@ padding: 20px;
     /* >>>> Contact page <<<< */
     .contact-footer {
         position: relative;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .contact-details {
+        min-width: 90vw;
+    }
+    .google-map-container {
+        padding-top: 0;
+        height: 50vh;
+        overflow: auto;
+    }
+    .google-map-container iframe {
+        width: 90vw;
+        height: 100%;
     }
 }
