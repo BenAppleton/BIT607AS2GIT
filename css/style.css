@@ -46,6 +46,9 @@ footer {
 .navbar a:hover {
     background-color: rgb(34, 34, 34);
 }
+.navbar a.singleactive {
+    background-color: rgb(8, 8, 8);
+}
 .nav-logo img {
     max-height: 75px;
     width: auto;
