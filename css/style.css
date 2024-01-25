@@ -52,7 +52,7 @@ body{
 }
 .nav-logo img {
     max-height: 75px;
-    margin-right: 20px;
+    width: auto;
 }
 .hamburger {
     display: none; /* Hidden by default */
@@ -111,12 +111,7 @@ body{
     border-radius: 15px;
     padding: 20px;
 }
-.aboutusimage1 {
-    padding: 10px;
-}
-.aboutusimage2 {
-    padding: 10px;
-}
+
 /* >>>>>>> Blog Page <<<<<<<< */
 /*This section of css is for the blog page elements */
 article {
@@ -128,15 +123,16 @@ article {
     width: auto;
 }
 .blog {
-padding-left: 20px;
-padding-right: 20px;
+padding: 20px;
 }
 .blogimage {
     padding: 5px;
 }
 .blogtext {
     text-align: center;
-    margin: 10px;
+    padding: 10px;
+    background-color: rgb(222, 222, 238);
+    border-radius: 15px;
 }
 #row3 {
     display: none;
@@ -175,8 +171,14 @@ padding-right: 20px;
 }
 .search-container {
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 40%; /* Center vertically */
     left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+}
+.filter-container {
+    position: absolute;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 #blogSearch {
@@ -185,12 +187,6 @@ padding-right: 20px;
     border: 5px solid #4b2c85;
     border-radius: 5px;
     font-size: 1.2em;
-}
-.filter-container {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 #blogFilter {
     width: 20vw;
@@ -215,7 +211,6 @@ padding-right: 20px;
 .blog-tag.cultural { 
     background-color: #dc3545; /* Example color for cultural tag */
 }
-
 
 /* >>>>>>> Menu Page <<<<<<<< */
 /* >>>> Menu Page Styling <<<< */
@@ -356,7 +351,7 @@ padding-right: 20px;
 .menu-list hr {
     border: none;
     height: 2px;
-    background-color: black;
+    color: black;
 }
 /* Style the menu item headings within list items */
 .menu-list h3 {
@@ -387,7 +382,11 @@ padding-right: 20px;
     margin-top: 5px;
 }
 
-
+/* >>>> Contact page <<<< */
+.google-map-container {
+    overflow:hidden;
+    padding: 10px;
+}
 /* >>>> Hours Page <<<< */
 .hours-container {
     display: flex;
@@ -396,9 +395,6 @@ padding-right: 20px;
     padding: 20px;
     margin: 0 auto;
     max-width: 800px;
-}
-.google-map-container {
-    overflow:hidden;
 }
 .hours-details {
     flex: auto;
@@ -411,11 +407,6 @@ padding-right: 20px;
 }
 .hours-details ul{
     list-style-type: none;
-    padding: 0px;
-}
-/* fixes the footer to the bottom of the webpage just for the hours page */
-.hours-footer{
-    position: fixed;
 }
 
 /* >>>> Booking Page <<<< */
@@ -430,6 +421,7 @@ padding-right: 20px;
 .booking-form iframe {
     display: block;
     margin: auto;
+    border: solid 2px black;
 }
 
 /* >>>>>>> Mobile responsive <<<<<<<< */
@@ -579,5 +571,6 @@ padding-right: 20px;
         width: 100%;
         height: 100%;
         overflow: auto;
+        border: none;
     }
 }
