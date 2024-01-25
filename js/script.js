@@ -1,4 +1,4 @@
-// >>>> JS for global navigation <<<<
+// >>>> JS for global mobile navigation <<<<
 document.getElementById('header-hamburger').addEventListener('click', function() {
   document.querySelector('header .navbar').classList.toggle('active');
 });
@@ -20,6 +20,7 @@ document.getElementById('loadMore').addEventListener('click', function() {
   // Update the progress bar to 100%
   progressBar.style.width = '100%';
 });
+// toggles the extra blogs visability
 document.getElementById('blogSearch').addEventListener('input', function(e) {
   var searchTerm = e.target.value.toLowerCase();
   var blogs = document.querySelectorAll('.blog');
@@ -33,6 +34,7 @@ document.getElementById('blogSearch').addEventListener('input', function(e) {
       }
   });
 });
+// used for the filter controls for filtering by culture recipe and all blogs
 document.getElementById('blogFilter').addEventListener('change', function(e) {
   var selectedTag = e.target.value;
   var blogs = document.querySelectorAll('.blog');

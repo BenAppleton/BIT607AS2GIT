@@ -248,7 +248,7 @@ padding: 20px;
 }
 
 /* >>>>>>> Menu Page <<<<<<<< */
-/* >>>> Menu Page Styling <<<< */
+/* >>>> This styles the container that hold text and image elements <<<< */
 .menu-container {
     display: flex;
     flex-direction: row;
@@ -272,7 +272,7 @@ padding: 20px;
     text-align: center;
     background-color: rgb(181, 181, 189);
 }
-/* This is flex box with the menu-section flex box, it allows the image portion to display as a column on desktop */
+/* This is flex box with the menu-container flex box, it allows the image portion to display as a column on desktop */
 .menu-images-container {
     display: flex;
     flex-direction: column;
@@ -362,15 +362,14 @@ padding: 20px;
     width: 50%;
 }
 /*>>>> Text styling for menu page <<<<*/
-/* Style the unordered list inside the food menu */
+/* Styled to hide the bullet poits */
 .menu-list ul {
     list-style-type: none;
     padding: 0;
 }
-/* Style the list items inside the food menu */
+/* Style the list items inside the food menu to give some extra space between lines */
 .menu-list li {
     margin-bottom: 1.25em;
-    color: black;
 }
 .menu-list li hr {
     width: 10vw;
@@ -389,6 +388,7 @@ padding: 20px;
 }
 
 /* >>>> Contact page <<<< */
+/* This is the flex box that holds the text and ifram elements */
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -403,6 +403,7 @@ padding: 20px;
     padding: 10px;
     background-color: rgb(222, 222, 238);
 }
+/* used for styling the google map */
 .google-map-container {
     width: auto;
     height: auto;
@@ -410,14 +411,18 @@ padding: 20px;
     border-radius: 20px;
     padding: 5px;
 }
+/* Styled to hide the bullet poits */
 .contact-details ul{
     list-style-type: none;
 }
+/* Footer will not stay at the bottom of the desktop without this */
 .contact-footer {
     position: fixed;
 }
 
 /* >>>> Hours Page <<<< */
+/* This is the flex box that holds the text and ifram elements */
+/* Didn't need to do any styling of the calendar as google let me set the width and height */
 .hours-container {
     display: flex;
     justify-content: center;
@@ -438,15 +443,17 @@ padding: 20px;
 .hours-details ul{
     list-style-type: none;
 }
+
 /* >>>> Booking Page <<<< */
+/* Booking form flex box */
 .booking-form {
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
 }
-
+/* set a border as this can take a second to load lets you know something will go here */
 .booking-form iframe {
     display: block;
     margin: auto;
@@ -481,7 +488,7 @@ padding: 20px;
         display: flex;
         flex-direction: column;
     }
-    /* >>>> Home page <<<< */
+    /* >>>> Home page and blog shared hero image <<<< */
     .heroimage {
         position: relative;
         overflow: hidden;
@@ -489,7 +496,6 @@ padding: 20px;
         margin-left: 10px;
         margin-right: 10px;
     }
-
     .heroimage img {
         height: auto;
         object-fit: cover;
@@ -540,6 +546,7 @@ padding: 20px;
         left: 50%;
         transform: translateX(-50%); /* This adjusts horizontal centering */
     }
+    /* sets where the text box and filter box position overlaying the hero image */
     .search-container {
         bottom: 55%;
     }
@@ -550,6 +557,7 @@ padding: 20px;
         width: 100%;
         padding: 10px;
     }
+    /* Positioning the blog thumbnails for mobile as a column */
     .blogimage {
         display: flex;
         flex-direction: column;
@@ -564,9 +572,11 @@ padding: 20px;
         padding-right: 10px;
     }
     /* >>>> Hours page mobile responsive design <<<< */
+    /* so the footer is no longer fixed */
     .hours-footer{
         position:relative;
     }
+    /* Positioning elements as column instead of a row*/
     .hours-container {
         display: flex;
         flex-direction: column;
@@ -602,9 +612,11 @@ padding: 20px;
         border: none;
     }
     /* >>>> Contact page <<<< */
+    /* so the footer is no longer fixed */
     .contact-footer {
         position: relative;
     }
+    /* Positioning elements as column instead of a row*/
     .contact-container {
         display: flex;
         flex-direction: column;
@@ -616,6 +628,7 @@ padding: 20px;
     .contact-details {
         min-width: 90vw;
     }
+    /* stops the google elements from overflowing to the right means no horizontal scrolling */
     .google-map-container {
         padding-top: 0;
         height: 50vh;
