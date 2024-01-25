@@ -226,6 +226,7 @@ padding: 20px;
     margin: 5px;
     border-radius: 20px;
     padding: 5px;
+    background-color: rgb(222, 222, 238);
 }
 .menu-list {
     width: 500px;
@@ -234,6 +235,7 @@ padding: 20px;
     border-radius: 20px;
     padding: 5px;
     text-align: center;
+    background-color: rgb(181, 181, 189);
 }
 /* This is flex box with the menu-section flex box, it allows the image portion to display as a column on desktop */
 .menu-images-container {
@@ -319,12 +321,7 @@ padding: 20px;
     height: 300px;
     margin: 5px;
 }
-#menu-box1 {
-    background-color: rgb(222, 222, 238);
-}
-#menu-box2 {
-    background-color: rgb(181, 181, 189);
-}
+
 #menu-box3 {
     background-color: red;
 }
