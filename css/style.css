@@ -23,10 +23,6 @@ footer {
     margin-left: 20px;
     color: white;
 }
-body{
-    margin: 0px;
-    background-color: rgb(231, 238, 253);
-}
 .navbar {
     display: flex;
     justify-content: center;
@@ -71,8 +67,30 @@ body{
     background-color: white;
     margin: 2px 0; /* This creates space between the lines */
 }
+body {
+    margin: 0px;
+    background-color: rgb(231, 238, 253);
+    font-family: Verdana, Geneva, sans-serif;
+    color: black;
+}
+p {
+    font-size: 1.10em;
+}
+
 h1 {
     font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.875em;
+}
+
+h3 {
+    font-size: 1.563em;
+}
+
+h4 {
+    font-size: 1.25em;
 }
 hr {
     height: 0.1em;
@@ -223,10 +241,10 @@ padding: 20px;
 }
 /* Different background colors for different tags, if desired */
 .blog-tag.recipes { 
-    background-color: #28a745; /* Example color for recipes tag */
+    background-color: #28a745;
 }
 .blog-tag.cultural { 
-    background-color: #dc3545; /* Example color for cultural tag */
+    background-color: #dc3545;
 }
 
 /* >>>>>>> Menu Page <<<<<<<< */
@@ -238,19 +256,19 @@ padding: 20px;
     padding-top: 20px;
 }
 .menu-selection {
-    width: 300px;
-    height: 200px;
+    width: 20vw;
+    height: 25vh;
     margin: 5px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
     background-color: rgb(222, 222, 238);
 }
 .menu-list {
-    width: 500px;
+    width: 40vw;
     height: auto;
     margin: 5px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     background-color: rgb(181, 181, 189);
 }
@@ -258,7 +276,6 @@ padding: 20px;
 .menu-images-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 /* This fits the food image to the menu image container stopping overflow */
 .menu-images-container img {
@@ -355,34 +372,10 @@ padding: 20px;
     margin-bottom: 1.25em;
     color: black;
 }
-/* Style the section headers within food menu */
-.menu-list h2 {
-    font-size: 2em;
-    margin-bottom: 0.16em;
-    color: black;
+.menu-list li hr {
+    width: 10vw;
 }
-/* Style the menu item headings within list items */
-.menu-list h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.21em; 
-    color: black;
-}
-/* Style the menu item descriptions within list items */
-.menu-list p {
-    font-size: 1.125em;
-    color: black;
-}
-/* Style the menu item prices within list items */
-.menu-list p:last-child {
-    font-size: 1.125em;
-    font-weight: bold;
-    color: black;
-}
-.menu-list h4 {
-    font-size: 1.125em;
-    font-weight: bold;
-    color: black;
-}
+
 .menu-navigation a {
     font-size: 1.2em;
     color: black;
@@ -534,7 +527,7 @@ padding: 20px;
         max-width: 100%;
         height: auto;
         margin: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     /* >>>> Blog page mobile responsive design <<<< */
