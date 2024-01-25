@@ -209,8 +209,10 @@ padding: 20px;
     font-size: 2.5em;
 }
 .blog-headline hr {
-    text-align: center;
     width: 50%;
+    height: 1px;
+    background-color: black;
+    border: none;
 }
 /* Different background colors for different tags, if desired */
 .blog-tag.recipes { 
@@ -334,8 +336,10 @@ padding: 20px;
     font-size: 2.5em;
 }
 .menu-headline hr {
-    text-align: center;
     width: 50%;
+    height: 1px;
+    background-color: black;
+    border: none;
 }
 #menu-box3 {
     background-color: red;
@@ -361,9 +365,9 @@ padding: 20px;
     color: black;
 }
 .menu-list hr {
-    border: none;
-    height: 2px;
-    color: black;
+        height: 2px;
+        background-color: black;
+        border: none;
 }
 /* Style the menu item headings within list items */
 .menu-list h3 {
@@ -378,6 +382,11 @@ padding: 20px;
 }
 /* Style the menu item prices within list items */
 .menu-list p:last-child {
+    font-size: 1.125em;
+    font-weight: bold;
+    color: black;
+}
+.menu-list h4 {
     font-size: 1.125em;
     font-weight: bold;
     color: black;
@@ -419,6 +428,9 @@ padding: 20px;
 }
 .hours-details ul{
     list-style-type: none;
+}
+.contact-footer {
+    position: fixed;
 }
 
 /* >>>> Booking Page <<<< */
@@ -584,5 +596,9 @@ padding: 20px;
         height: 100%;
         overflow: auto;
         border: none;
+    }
+    /* >>>> Contact page <<<< */
+    .contact-footer {
+        position: relative;
     }
 }
