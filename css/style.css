@@ -20,8 +20,8 @@ footer {
     margin-top: 10px;
 }
 .footer-text {
-    margin-left: 20px; /* Adds some space between the navbar and the text */
-    color: white; /* Adjust color as needed */
+    margin-left: 20px;
+    color: white;
 }
 body{
     margin: 0px;
@@ -31,7 +31,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(78, 78, 78); /* Or any color of your choice */
+    background-color: rgb(78, 78, 78);
 }
 .navbar ul {
     list-style-type: none;
@@ -51,7 +51,7 @@ body{
     background-color: rgb(34, 34, 34);
 }
 .nav-logo img {
-    max-height: 75px; /* Adjust as needed */
+    max-height: 75px;
     margin-right: 20px;
 }
 .hamburger {
@@ -87,11 +87,11 @@ body{
     border-radius: 15px;
     background-color: black;
     align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 /*the ID for the homepage hero image*/
-.hompageimage {
+.imagehero {
     max-width: 100%;
     height: auto;
     align-items: center;
@@ -131,21 +131,6 @@ article {
 padding-left: 20px;
 padding-right: 20px;
 }
-.heroimageblog {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    border-radius: 15px;
-    background-color: black;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.blogheroimage {
-    max-width: 100%;
-    height: auto;
-    align-items: center;
-}
 .blogimage {
     padding: 5px;
 }
@@ -159,13 +144,13 @@ padding-right: 20px;
 #loadMore {
     display: block;
     margin: 20px auto;
-    padding: 15px 30px; /* Larger padding for bigger button size */
-    font-size: 20px; /* Larger font size for better visibility */
-    border: 1px solid #000; /* Optional: adds a border */
-    background-color: #f5f5f5; /* Optional: background color */
-    color: #000; /* Optional: text color */
-    cursor: pointer; /* Changes cursor to indicate it's clickable */
-    border-radius: 5px; /* Optional: rounds the corners */
+    padding: 15px 30px;
+    font-size: 20px;
+    border: 1px solid #000;
+    background-color: #f5f5f5;
+    color: #000;
+    cursor: pointer;
+    border-radius: 5px;
 }
 #progressBarContainer {
     width: 25%;
@@ -176,12 +161,13 @@ padding-right: 20px;
 #progressBar {
     width: 75%;
     height: 20px;
-    background-color: #800080; /* Darker purple (change as needed) */
+    background-color: #800080;
     border-radius: 5px;
     transition: width 0.5s ease-in-out;
 }
+/* Position relative is needed for positioning the search and filter containers as absolute */
 .heroimageblog {
-    position: relative; /* Needed for absolute positioning inside */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,15 +177,27 @@ padding-right: 20px;
     position: absolute;
     top: 50%; /* Center vertically */
     left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust the position to truly center it */
-    z-index: 10; /* Ensure it's above the image */
+    transform: translate(-50%, -50%);
 }
 #blogSearch {
-    width: 500px;
+    width: 20vw;
     padding: 10px;
     border: 5px solid #4b2c85;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1.2em;
+}
+.filter-container {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#blogFilter {
+    width: 20vw;
+    padding: 10px;
+    border: 5px solid #4b2c85;
+    border-radius: 5px;
+    font-size: 1.2em;
 }
 .blog-tag {
     display: inline-block;
@@ -217,20 +215,7 @@ padding-right: 20px;
 .blog-tag.cultural { 
     background-color: #dc3545; /* Example color for cultural tag */
 }
-.filter-container {
-    position: absolute;
-    top: 60%; /* Adjust the position based on your layout */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10; /* Ensure it's above the image */
-}
-#blogFilter {
-    width: 500px; /* Adjust width as needed */
-    padding: 10px;
-    border: 5px solid #4b2c85; /* Adjust border color as needed */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 16px; /* Adjust font size as needed */
-}
+
 
 /* >>>>>>> Menu Page <<<<<<<< */
 /* >>>> Menu Page Styling <<<< */
@@ -412,13 +397,16 @@ padding-right: 20px;
     margin: 0 auto;
     max-width: 800px;
 }
+.google-map-container {
+    overflow:hidden;
+}
 .hours-details {
     flex: auto;
     align-items: center;
     background-color: rgb(173, 197, 218);
     border-radius: 20px;
     padding: 20px;
-    margin-left: 10px;
+    margin-right: 10px;
     width: auto;
 }
 .hours-details ul{
@@ -476,7 +464,7 @@ padding-right: 20px;
     .heroimage {
         position: relative;
         overflow: hidden;
-        height: auto; /* Adjust this value based on your design needs */
+        height: auto;
         margin-left: 10px;
         margin-right: 10px;
     }
@@ -525,28 +513,17 @@ padding-right: 20px;
     .blog {
         max-width: 100%;
     }
-    .heroimageblog {
-        position: relative;
-        overflow: hidden;
-        height: 600px; /* Adjust this value based on your design needs */
-
-    }
-    .heroimageblog img {
-        height: 600px;
-        object-fit: cover;
-        object-position: center center; /* Adjusts the focal point of the image */
-    }
     .search-container, .filter-container {
-        width: 90%; /* Adjust the width to fit smaller screens */
-        top: auto; /* Remove top position */
-        left: 50%; /* Center horizontally */
-        transform: translateX(-50%); /* Adjust horizontal centering */
+        width: 90vw;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%); /* This adjusts horizontal centering */
     }
     .search-container {
-        bottom: 55%; /* Adjust bottom position for search container */
+        bottom: 55%;
     }
     .filter-container {
-        bottom: 45%; /* Adjust bottom position for filter container */
+        bottom: 35%;
     }
     #blogSearch, #blogFilter {
         width: 100%;
@@ -564,24 +541,40 @@ padding-right: 20px;
     /* >>>> Hours page mobile responsive design <<<< */
     .hours-container {
         flex-direction: column;
-        align-items: stretch; /* helps to get the most width out of the iframe in mobile view */
+        align-items: stretch;
     }
     .hours-footer{
         position:relative;
     }
     .hours-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         padding: 20px;
         box-sizing: border-box;
-        margin-top: 10px;
-        margin-left: 0px;
+        margin-bottom: 10px;
+        margin-right: 0px;
     }
     .google-calendar-container {
-        padding-top: 0; /* Override the padding-top for mobile */
-        height: 50vh; /* Set a height relative to the viewport */
-        overflow: auto; /* Allow scrolling on small screens */
+        padding-top: 0;
+        height: 50vh;
+        overflow: auto;
     }
     .google-calendar-container iframe {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+    /* >>>> Booking page <<<< */
+    .booking-form {
+        padding-top: 0;
+        height: 50vh;
+        overflow: auto;
+    }
+    .booking-form iframe {
         position: relative;
         width: 100%;
         height: 100%;
